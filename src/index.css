@@ -1,0 +1,40 @@
+:root {
+  --bg: #f7f6f2;
+  --card: #ffffff;
+  --ink: #1d2433;
+  --muted: #5d6679;
+  --line: #e3e0d6;
+  --accent: #2b4acb;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171f;
+    --card: #1c2029;
+    --ink: #eceef3;
+    --muted: #9aa3b5;
+    --line: #2b313e;
+    --accent: #8ea2ff;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); }
+.page { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+.eyebrow { color: var(--accent); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; margin: 0; }
+h1 { margin: 4px 0 8px; font-size: 2rem; }
+.lede { color: var(--muted); margin: 0 0 24px; }
+h2 { margin: 32px 0 12px; font-size: 1.15rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; }
+.card h3 { margin: 0 0 8px; font-size: 1rem; }
+.card ul { list-style: none; margin: 0; padding: 0; }
+.card li { display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-top: 1px solid var(--line); }
+.card li:first-child { border-top: 0; }
+.card p { margin: 6px 0; }
+.card small { color: var(--muted); text-transform: capitalize; }
+.badge { font-size: 0.72rem; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; align-self: center; }
+.badge.verify { border-color: #c98a00; color: #c98a00; }
+.badge.in_scope { border-color: #2f8f4e; color: #2f8f4e; }
+.badge.beyond_scope { border-color: #b4443a; color: #b4443a; }
+.badge.demo { border-color: var(--accent); color: var(--accent); }

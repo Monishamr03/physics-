@@ -1,0 +1,24 @@
+[
+  {
+    "id": "demo-001",
+    "text": "State Coulomb's law and write it in vector form.",
+    "topicId": "t2",
+    "subtopicId": "t2.law",
+    "type": "short_answer",
+    "marks": 2,
+    "exams": ["KA_PUC2"],
+    "source": { "name": "Original demo question", "kind": "original", "license": "demo" },
+    "isDemo": true
+  },
+  {
+    "id": "demo-002",
+    "text": "Two point charges of +2 µC and −3 µC are 10 cm apart in air. Find the magnitude of the force between them.",
+    "topicId": "t2",
+    "subtopicId": "t2.law",
+    "type": "numerical",
+    "marks": null,
+    "exams": ["JEE_MAIN", "NEET"],
+    "source": { "name": "Original demo question", "kind": "original", "license": "demo" },
+    "isDemo": true
+  }
+]
